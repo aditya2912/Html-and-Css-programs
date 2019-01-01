@@ -1,0 +1,116 @@
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+* {
+ box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 1100px;
+}
+
+.row:after {
+   content: "";
+   display: table;
+   clear: both
+   
+   }
+   
+  p {
+   font-family : verdana; }
+   
+  #textColor {
+   color: white;
+  }
+  
+  .HrColor {
+    padding-bottom: 20px;
+	font-family: Times New Romans;
+  }
+  
+  #position {
+    position: relative;
+	bottom: 40px;
+  }
+  
+  #leftPadding {
+     position: relative;
+     left: -5px;
+	 bottom: 50px;
+	 color: red;
+   }
+   
+   .centerPadding {
+      position: relative;
+      bottom: 105px;
+      left: 40px;
+      font-family: verdana;	  
+   }
+
+    .smallTextAlignment {
+	    position: relative;
+		bottom: 115px;
+		left: 40px;
+		font-family: Times New Roman;
+	}
+	
+	#position1 {
+      	position: relative;
+	bottom: 120px;
+	}
+	
+	.centerPadding1 {
+      position: relative;
+      bottom: 185px;
+      left: 40px;
+      font-family: verdana;	  
+   }
+   
+   #leftPadding1 {
+     position: relative;
+     left: -5px;
+	 bottom: 130px;
+	 color: red;
+   }
+</style>
+</head>
+<body>
+<h2> Two column </h2>
+
+<div class="row">
+   <div class="column" style="background-color:#000000;">
+   <h5 id="textColor"> Cover Story </h5>
+   <h1 id="textColor"> The Cancer Lottery </h1>
+   
+   <p id="textColor"> The MIT Technology review, a 117 year old publication that covers technology in a way anyone can understand, was relaunched earlier this summer by Boston design studio Upstatement. "We are super fans of Tech review, so when Erik Pelletier approached us to work on the site, we were psyched", says Mike Swatrz, partner at Upstatement.</p>
+   <img src="Desert.jpg" width="500" height="333">
+</div> 
+
+<div class="column" style="background-color:#FFFFFF;">
+    <hr noshade style ="padding-right: 5px;"> </hr> 
+    <h4 class="HrColor position"> Top Stories </h4>	
+	<h6 id="position"> Your guide to what matters today </h6>
+	<hr id="position"> </hr> 
+    
+	<h1 id="leftPadding"> 01 </h1>
+	<h4 class="centerPadding"> AI begins to understand the 3-D world. </h4>
+	<h6 class="smallTextAlignment"> Research on artificial intelligence moves from 2-D to 3-D representations of the world - work that could lead to big advances in robotics and automated driving </h6>
+	<hr id="position1"> </hr> 
+	
+	<h1 id="leftPadding1"> 01 </h1>
+	<h4 class="centerPadding1"> AI begins to understand the 3-D world. </h4>
+	<h6 class="smallTextAlignment"> Research on artificial intelligence moves from 2-D to 3-D representations of the world - work that could lead to big advances in robotics and automated driving </h6>
+	<hr id="position1"> </hr> 
+	
+	
+</div>
+ </div>   
+</body>
+
+
+
+</html>
